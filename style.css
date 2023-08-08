@@ -9,7 +9,7 @@
     font-size:16px;
 }
 body{
-    background-color: #030009;
+    background-color: #0e0e0c;
     color: #ffffff;
     font-family: "Inter", sans-serif;
 }
@@ -19,7 +19,7 @@ body{
 
 }
 .container{
-    padding: 1vw 10% 10%;
+    padding: 1.3vh 10% 10%;
 }
 nav{
     display: flex;
@@ -28,9 +28,12 @@ nav{
     flex-wrap: wrap;
     font-family: "Roboto Mono", monospace;
 }
-.logo{
+nav .logo{
     font-size: 4rem;
     font-weight: 800;
+    color: #CDC1FF;
+}
+nav .nav_nums{
     color: #CDC1FF;
 }
 nav ul li {
@@ -41,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a{
-    color: #cadbde;
+    color: #c9d3d5;
     text-decoration: none;
     font-size: 1rem;
     transition: 200ms all;
@@ -68,7 +71,47 @@ nav ul li a:hover{
     color: #bae5cc;
 }
 .header-txt p{
-    color: #cadbde;
+    color: #c9d3d5;
     margin-top: 3%;
     line-height: 2rem;
+}
+
+/*------------------ about ------------------*/
+#about{
+    /*padding: 0.2vh 0;*/
+    color: #c9d3d5;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-txt{
+    flex-basis: 50%;
+    line-height: 2rem;
+
+}
+.subtitle{
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 5%;
+    font-family: "Roboto Mono", monospace;
+}
+.about-img{
+    flex-basis: 30%;
+}
+.about-img img{
+    aspect-ratio: 7/8;
+
+    object-fit: cover;
+    width: 18vw;
+}
+.tab-titles{
+    display: flex;
+    margin: 3vh 0 5vw;
+}
+.tab-links{
+    margin-right: 10vw;
+    font-size: 1.25rem;
+    font-family: "Roboto Mono", monospace;
 }

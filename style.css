@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Inter|Roboto+Mono);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size:16px;
+}
+body{
+    background-color: #030009;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+
+}
+.container{
+    padding: 1vw 10% 10%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Roboto Mono", monospace;
+}
+.logo{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #CDC1FF;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 1rem;
+}
+
+nav ul li a{
+    color: #cadbde;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 200ms all;
+}
+
+/*nav ul li a:before{*/
+/*    color: #ffffff;*/
+/*}*/
+nav ul li a:hover{
+    color: #CDC1FF;
+    font-size: 1rem;
+
+}
+
+.header-txt{
+    margin-top: 10%;
+    font-family: "Roboto Mono", monospace;
+    color: #CDC1FF;
+}
+.header-txt h1{
+    margin-top: 2%;
+    font-family: "Inter", sans-serif;
+    font-size: 5rem;
+    color: #bae5cc;
+}
+.header-txt p{
+    color: #cadbde;
+    margin-top: 3%;
+    line-height: 2rem;
+}

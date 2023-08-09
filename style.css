@@ -26,14 +26,15 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Inter", sans-serif;
 }
 nav .logo{
     font-size: 4rem;
     font-weight: 800;
     color: #CDC1FF;
 }
-nav .nav_nums{
+nav .nav-nums{
+    font-family: "Roboto Mono", monospace;
     color: #CDC1FF;
 }
 nav ul li {
@@ -78,7 +79,7 @@ nav ul li a:hover{
 
 /*------------------ about ------------------*/
 #about{
-    /*padding: 0.2vh 0;*/
+    padding: 20vh 0;
     color: #c9d3d5;
 }
 .row{
@@ -89,13 +90,29 @@ nav ul li a:hover{
 .about-txt{
     flex-basis: 50%;
     line-height: 2rem;
-
 }
 .subtitle{
+    display: flex;
     font-size: 3.5rem;
     font-weight: 500;
     margin-bottom: 5%;
+    letter-spacing: -0.1rem;
+    font-family: "Inter", sans-serif
+}
+.subtitle-nums{
     font-family: "Roboto Mono", monospace;
+    color: #CDC1FF;
+    font-size: 2.5rem;
+    margin-right: 0.75rem;
+    position: relative;
+    top: 0.1rem;
+}
+.subtitle-line{
+    width: 100%;
+    height: 0.01vh;
+    background-color: #5a5570;
+    margin-left: 1rem;
+    margin-top: 1.3rem;
 }
 .about-img{
     flex-basis: 30%;
@@ -113,5 +130,25 @@ nav ul li a:hover{
 .tab-links{
     margin-right: 10vw;
     font-size: 1.25rem;
-    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 0.1rem;
+    background-color: #adffcd;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 3vh 0;
 }

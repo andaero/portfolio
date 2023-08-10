@@ -152,3 +152,6 @@ nav ul li a:hover{
     list-style: none;
     margin: 3vh 0;
 }
+.tab-contents ul li span{
+    color: #CDC1FF;
+}
